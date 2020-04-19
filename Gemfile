@@ -10,12 +10,10 @@ end
 gem 'rails', '~> 5.1.5'
 #gem 'sqlite3'
 gem 'puma', '~> 3.7'
-gem 'dotenv-rails', require: 'dotenv/rails-now'
+gem 'dotenv-rails',
+     require: 'dotenv/rails-now'
 gem 'pg', '~> 1.2.2'
 gem 'sidekiq', '~> 6.0.4'
-
-
-
 
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
