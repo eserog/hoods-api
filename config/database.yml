@@ -7,19 +7,11 @@ default: &default
   host: <%= ENV["DB_HOST"] %>
   timeout: 5000
 
-development: &default
-  # adapter: postgresql
-  adapter: <%= ENV["DB_ADAPTER"] %>
-  database: <%= ENV["DB"] %>
-  min_messages: <%= ENV["DB_MIN_MESSAGES"] %>
-  pool: <%= ENV["DB_POOL"] %>
-  username: <%= ENV["DB_USERNAME"] %>
-  host: <%= ENV["DB_HOST"] %>
+development: 
+  <<: *default
 
 test:
   <<: *default
-  database: backbone_data_bootstrap_test
 
 production:
   <<: *default
-  database: db/production.sqlite3
