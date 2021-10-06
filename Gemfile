@@ -13,7 +13,7 @@ gem 'puma', '~> 3.12'
 gem 'dotenv-rails',
      require: 'dotenv/rails-now'
 gem 'pg', '~> 1.2.2'
-gem 'sidekiq', '~> 6.0.4'
+gem 'sidekiq', '~> 6.2.1'
 
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
